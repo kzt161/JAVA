@@ -3,6 +3,7 @@ package day12.assignment4;
 public class Circle implements Shape{
 	
 	private int radius;
+	private String name = "cirlce";
 	
 	public Circle(int radius) {
 		this.radius = radius;
@@ -18,6 +19,12 @@ public class Circle implements Shape{
 	public double volume() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return this.name;
 	}
 
 }

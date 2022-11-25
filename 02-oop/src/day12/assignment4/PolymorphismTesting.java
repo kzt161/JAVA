@@ -9,7 +9,6 @@ public class PolymorphismTesting {
 		arr[0] = new Cube(3);
 		arr[1] = new Circle(3);
 		
-		String shape = "Cube";
 		
 		for(int i = 0; i < arr.length; i++) {
 			
@@ -19,10 +18,9 @@ public class PolymorphismTesting {
 			String area = String.format("%.2f", A);
 			String volume = String.format("%.2f", V);
 			
-			System.out.println("Area of " + shape + " is: " + area);
-			System.out.println("Volume of " + shape + " is: " + volume);
+			System.out.println("Area of " + arr[i].getName() + " is: " + area);
+			System.out.println("Volume of " + arr[i].getName() + " is: " + volume);
 			
-			shape = "Circle";
 			
 		}
 	}
